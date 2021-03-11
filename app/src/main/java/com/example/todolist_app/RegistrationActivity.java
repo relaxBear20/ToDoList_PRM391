@@ -9,25 +9,22 @@ import android.widget.Button;
 import android.widget.EditText;
 import android.widget.TextView;
 
-public class LoginActivity extends AppCompatActivity {
-
+public class RegistrationActivity extends AppCompatActivity {
     private EditText email, password;
-    private Button loginBtn;
-    private TextView loginQn;
-
+    private Button registerBtn;
+    private TextView registerQn;
     @Override
     protected void onCreate(Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);
-        setContentView(R.layout.activity_login);
+        setContentView(R.layout.activity_registration);
         email = findViewById(R.id.email);
         password = findViewById(R.id.password);
-        loginBtn = findViewById(R.id.loginBtn);
-        loginQn = findViewById(R.id.loginQn);
-
-        loginBtn.setOnClickListener(new View.OnClickListener() {
+        registerBtn = findViewById(R.id.registerBtn);
+        registerQn = findViewById(R.id.registerQn);
+        registerQn.setOnClickListener(new View.OnClickListener() {
             @Override
             public void onClick(View v) {
-                Intent intent = new Intent(LoginActivity.this, RegistrationActivity.class);
+                Intent intent = new Intent(RegistrationActivity.this, LoginActivity.class);
                 startActivity(intent);
 
             }
