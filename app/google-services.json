@@ -1,0 +1,47 @@
+{
+  "project_info": {
+    "project_number": "911116939302",
+    "project_id": "personalbudget-d0603",
+    "storage_bucket": "personalbudget-d0603.appspot.com"
+  },
+  "client": [
+    {
+      "client_info": {
+        "mobilesdk_app_id": "1:911116939302:android:bd232bbb7f1c1a28d836e7",
+        "android_client_info": {
+          "package_name": "com.example.todolist_app"
+        }
+      },
+      "oauth_client": [
+        {
+          "client_id": "911116939302-h3ke54b8lapon7k1sqar3nftvft619oa.apps.googleusercontent.com",
+          "client_type": 1,
+          "android_info": {
+            "package_name": "com.example.todolist_app",
+            "certificate_hash": "7ca7b5c100423670b039b08ba01b5434c2ab752e"
+          }
+        },
+        {
+          "client_id": "911116939302-m8788qpn89rms15e168gbvhahqfn931i.apps.googleusercontent.com",
+          "client_type": 3
+        }
+      ],
+      "api_key": [
+        {
+          "current_key": "AIzaSyAakg_zzj6fy9AW1jYzIy5QRpWmSBsf9ko"
+        }
+      ],
+      "services": {
+        "appinvite_service": {
+          "other_platform_oauth_client": [
+            {
+              "client_id": "911116939302-m8788qpn89rms15e168gbvhahqfn931i.apps.googleusercontent.com",
+              "client_type": 3
+            }
+          ]
+        }
+      }
+    }
+  ],
+  "configuration_version": "1"
+}
