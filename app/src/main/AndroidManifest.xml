@@ -12,7 +12,6 @@
         <activity android:name=".AnalyticsActivity"></activity>
         <activity android:name=".WeekSpendingActivity" />
         <activity android:name=".TodaySpendingActivity" />
-        <activity android:name=".BudgetActivity" />
         <activity android:name=".MainActivity" />
         <activity android:name=".RegistrationActivity" />
         <activity android:name=".LoginActivity" />

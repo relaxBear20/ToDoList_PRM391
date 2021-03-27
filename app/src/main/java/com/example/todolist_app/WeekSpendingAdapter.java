@@ -37,6 +37,10 @@ public class WeekSpendingAdapter extends RecyclerView.Adapter<WeekSpendingAdapte
     private String post_key = "";
     private String item = "";
     private String note = "";
+    private String date = "";
+    private int month = 0;
+    private int week = 0;
+
     private Double amount = 0.0;
     public WeekSpendingAdapter(Context mContext, List<Data> myDataList) {
         this.mContext = mContext;
@@ -61,34 +65,34 @@ public class WeekSpendingAdapter extends RecyclerView.Adapter<WeekSpendingAdapte
 
         switch (data.getItem()){
             case "Transport":
-                holder.imageView.setImageResource(R.drawable.ic_transport);
+                holder.imageView.setImageResource(R.drawable.transport);
                 break;
             case "Food":
-                holder.imageView.setImageResource(R.drawable.ic_food);
+                holder.imageView.setImageResource(R.drawable.food);
                 break;
             case "House":
-                holder.imageView.setImageResource(R.drawable.ic_house);
+                holder.imageView.setImageResource(R.drawable.house);
                 break;
             case "Entertainment":
-                holder.imageView.setImageResource(R.drawable.ic_entertainment);
+                holder.imageView.setImageResource(R.drawable.entertainment);
                 break;
             case "Education":
-                holder.imageView.setImageResource(R.drawable.ic_education);
+                holder.imageView.setImageResource(R.drawable.education);
                 break;
             case "Charity":
-                holder.imageView.setImageResource(R.drawable.ic_consultancy);
+                holder.imageView.setImageResource(R.drawable.consultancy);
                 break;
             case "Apparel":
-                holder.imageView.setImageResource(R.drawable.ic_shirt);
+                holder.imageView.setImageResource(R.drawable.shirt);
                 break;
             case "Health":
-                holder.imageView.setImageResource(R.drawable.ic_health);
+                holder.imageView.setImageResource(R.drawable.health);
                 break;
             case "Personal":
-                holder.imageView.setImageResource(R.drawable.ic_personalcare);
+                holder.imageView.setImageResource(R.drawable.personal);
                 break;
             case "Other":
-                holder.imageView.setImageResource(R.drawable.ic_other);
+                holder.imageView.setImageResource(R.drawable.other);
                 break;
         }
 
@@ -99,6 +103,9 @@ public class WeekSpendingAdapter extends RecyclerView.Adapter<WeekSpendingAdapte
                 item = data.getItem();
                 amount = data.getAmount();
                 note = data.getNotes();
+                date = data.getDate();
+                month = data.getMonth();
+                week = data.getWeek();
                 updateData();
             }
         });
@@ -131,17 +138,8 @@ public class WeekSpendingAdapter extends RecyclerView.Adapter<WeekSpendingAdapte
                 amount = Double.parseDouble(mAmount.getText().toString());
                 note = mNotes.getText().toString();
 
-                DateFormat dateFormat = new SimpleDateFormat("dd-MM-yyy");
-                Calendar cal = Calendar.getInstance();
-                String date = dateFormat.format(cal.getTime());
 
-                MutableDateTime epoch = new MutableDateTime();
-                epoch.setDate(0);
-                DateTime now = new DateTime();
-                Months months = Months.monthsBetween(epoch, now);
-                Weeks weeks = Weeks.weeksBetween(epoch, now);
-
-                Data data = new Data(item,date,post_key,note,amount,months.getMonths(),weeks.getWeeks());
+                Data data = new Data(item,date,post_key,note,amount,month,week);
                 DatabaseReference reference = FirebaseDatabase.getInstance().getReference("expenses")
                         .child(FirebaseAuth.getInstance().getCurrentUser().getUid());
                 reference.child(post_key).setValue(data).addOnCompleteListener(new OnCompleteListener<Void>() {

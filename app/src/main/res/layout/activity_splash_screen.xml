@@ -4,7 +4,7 @@
     xmlns:tools="http://schemas.android.com/tools"
     android:layout_width="match_parent"
     android:layout_height="match_parent"
-    android:background="#efc67c "
+    android:background="@drawable/gradient"
     android:gravity="center"
     android:orientation="vertical"
     tools:context=".SplashScreenActivity">
@@ -28,7 +28,7 @@
         android:text="SMART FINANCE"
         android:textAlignment="center"
         android:textAllCaps="true"
-        android:textColor="#454C56"
+        android:textColor="#1E2123"
         android:textSize="30sp"
         android:textStyle="bold" />
 

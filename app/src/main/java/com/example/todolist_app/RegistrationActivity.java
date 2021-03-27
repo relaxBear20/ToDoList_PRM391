@@ -20,7 +20,7 @@ import com.google.firebase.auth.FirebaseAuth;
 
 public class RegistrationActivity extends AppCompatActivity {
     private EditText email, password, rePassword;
-    private Button registerBtn;
+    private TextView registerBtn;
     private TextView registerQn;
     private FirebaseAuth mAuth;
     private ProgressDialog progressDialog;

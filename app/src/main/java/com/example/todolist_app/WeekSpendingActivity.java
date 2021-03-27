@@ -53,7 +53,6 @@ public class WeekSpendingActivity extends AppCompatActivity {
         df.setMaximumFractionDigits(2);
         toolbar = findViewById(R.id.toolbar);
         setSupportActionBar(toolbar);
-        getSupportActionBar().setTitle("Week Spending");
 
         totalWeekAmountTextView = findViewById(R.id.totalWeekAmountTextView);
         progressBar = findViewById(R.id.progressBar);
@@ -75,8 +74,10 @@ public class WeekSpendingActivity extends AppCompatActivity {
         if (getIntent().getExtras() != null){
             type = getIntent().getStringExtra("type");
             if (type.equals("week")){
+                getSupportActionBar().setTitle("Week Spending");
                 readWeekSpendingItems();
             }else if (type.equals("month")){
+                getSupportActionBar().setTitle("Month Spending");
                 readMonthSpendingItems();
             }
         }

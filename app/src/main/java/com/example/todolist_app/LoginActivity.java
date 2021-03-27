@@ -23,7 +23,7 @@ import com.google.firebase.auth.FirebaseUser;
 public class LoginActivity extends AppCompatActivity {
 
     private EditText email, password;
-    private Button loginBtn;
+    private TextView loginBtn;
     private TextView loginQn;
 private FirebaseAuth mAuth;
 private ProgressDialog progressDialog;

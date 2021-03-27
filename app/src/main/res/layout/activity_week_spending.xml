@@ -4,7 +4,6 @@
     xmlns:tools="http://schemas.android.com/tools"
     android:layout_width="match_parent"
     android:layout_height="match_parent"
-    android:background="#b1d1ed "
     android:orientation="vertical"
     tools:context=".WeekSpendingActivity">
 
@@ -12,10 +11,10 @@
         android:id="@+id/toolbar"
         android:layout_width="match_parent"
         android:layout_height="wrap_content"
-        android:background="#efc67c "
+        android:background="@drawable/gradient"
         android:elevation="4dp"
-        android:theme="@style/ThemeOverlay.AppCompat.Dark.ActionBar"
-        app:popupTheme="@style/ThemeOverlay.AppCompat.Light" />
+
+        />
 
     <TextView
         android:id="@+id/totalWeekAmountTextView"
@@ -42,10 +41,7 @@
             android:id="@+id/recycleView"
             android:layout_width="match_parent"
             android:layout_height="match_parent"
-            android:layout_marginLeft="5dp"
-            android:layout_marginRight="5dp"
-            android:layout_marginBottom="5dp"
-            android:background="#fcf3b5 " />
+            android:background="#474745" />
 
     </androidx.coordinatorlayout.widget.CoordinatorLayout>
 </LinearLayout>

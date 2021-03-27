@@ -1,20 +1,21 @@
 <?xml version="1.0" encoding="utf-8"?>
 <LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
     android:layout_width="match_parent"
     android:layout_height="wrap_content"
     android:layout_margin="10dp"
-    android:background="#fcf3b5 "
+    android:background="#fff"
     android:orientation="vertical">
 
     <TextView
         android:layout_width="match_parent"
         android:layout_height="wrap_content"
         android:layout_marginTop="5dp"
-        android:background="#efc67c "
+        android:background="#32364C"
         android:gravity="center"
         android:padding="5dp"
         android:text="Update this item?"
-        android:textColor="#000"
+        android:textColor="#fff"
         android:textSize="20sp" />
 
     <TextView
@@ -72,11 +73,12 @@
                 android:layout_marginTop="2dp"
                 android:layout_marginEnd="2dp"
                 android:layout_marginBottom="2dp"
-                android:backgroundTint="#fca3b5 "
+                android:backgroundTint="#302153"
                 android:text="Delete"
                 android:textAllCaps="false"
-                android:textColor="#000"
-                android:textStyle="bold" />
+                android:textColor="#fff"
+                android:textStyle="bold"
+                app:cornerRadius="25dp" />
         </RelativeLayout>
 
         <RelativeLayout
@@ -92,11 +94,12 @@
                 android:layout_marginTop="2dp"
                 android:layout_marginEnd="2dp"
                 android:layout_marginBottom="2dp"
-                android:backgroundTint="#ba83c4 "
+                android:backgroundTint="#302153"
                 android:text="Update"
                 android:textAllCaps="false"
-                android:textColor="#000"
-                android:textStyle="bold" />
+                android:textColor="#fff"
+                android:textStyle="bold"
+                app:cornerRadius="25dp" />
         </RelativeLayout>
     </LinearLayout>
 

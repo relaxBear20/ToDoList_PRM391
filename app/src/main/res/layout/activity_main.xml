@@ -4,7 +4,7 @@
     xmlns:tools="http://schemas.android.com/tools"
     android:layout_width="match_parent"
     android:layout_height="match_parent"
-    android:background="#efc67c "
+    android:background="@drawable/gradient"
     tools:context=".MainActivity">
 
 
@@ -35,7 +35,7 @@
             android:layout_marginTop="30dp"
             android:layout_marginRight="30dp"
             android:layout_marginBottom="30dp"
-            android:background="#fcf3b5 "
+            android:background="#B8B7BC"
             android:columnCount="2"
             android:rowCount="3">
 
@@ -52,7 +52,8 @@
                 android:layout_marginTop="10dp"
                 android:layout_marginRight="5dp"
                 android:layout_marginBottom="5dp"
-                android:background="#fff">
+                android:background="#fff"
+                app:cardCornerRadius="25dp">
 
                 <LinearLayout
                     android:layout_width="wrap_content"
@@ -65,7 +66,7 @@
                         android:id="@+id/analyticsBtnImageView"
                         android:layout_width="60dp"
                         android:layout_height="60dp"
-                        android:src="@drawable/ic_anaytic" />
+                        android:src="@drawable/statistics" />
 
                     <TextView
                         android:id="@+id/analyticsBtnTextView"
@@ -93,7 +94,8 @@
                 android:layout_marginTop="10dp"
                 android:layout_marginRight="10dp"
                 android:layout_marginBottom="5dp"
-                android:background="#fff">
+                android:background="#fff"
+                app:cardCornerRadius="25dp">
 
                 <LinearLayout
                     android:layout_width="wrap_content"
@@ -133,7 +135,8 @@
                 android:layout_marginTop="5dp"
                 android:layout_marginRight="5dp"
                 android:layout_marginBottom="10dp"
-                android:background="#fff">
+                android:background="#fff"
+                app:cardCornerRadius="25dp">
 
                 <LinearLayout
                     android:layout_width="wrap_content"
@@ -173,7 +176,8 @@
                 android:layout_marginTop="5dp"
                 android:layout_marginRight="10dp"
                 android:layout_marginBottom="10dp"
-                android:background="#fff">
+                android:background="#fff"
+                app:cardCornerRadius="25dp">
 
                 <LinearLayout
                     android:layout_width="wrap_content"
@@ -213,7 +217,7 @@
         android:layout_width="match_parent"
         android:layout_height="wrap_content"
         android:layout_alignBottom="@id/coordinator"
-        android:background="#b1d1ed "
+        android:background="#6891B5"
         android:elevation="4dp"
         android:theme="@style/ThemeOverlay.AppCompat.Dark.ActionBar"
         app:popupTheme="@style/ThemeOverlay.AppCompat.Light">
@@ -223,13 +227,14 @@
             android:layout_width="wrap_content"
             android:layout_height="wrap_content"
             android:layout_marginLeft="250dp"
-            android:backgroundTint="#ba83c4 "
+            android:backgroundTint="#676A77"
             android:gravity="center_vertical"
             android:onClick="logout"
             android:text="Logout"
             android:textAlignment="center"
             android:textColor="#FFFFFF"
-            android:textStyle="bold" />
+            android:textStyle="bold"
+            app:cornerRadius="25dp" />
     </androidx.appcompat.widget.Toolbar>
 
 </RelativeLayout>
