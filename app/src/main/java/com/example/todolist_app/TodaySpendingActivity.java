@@ -77,7 +77,6 @@ public class TodaySpendingActivity extends AppCompatActivity {
                 addItemSpentOn();
             }
 
-
         });
         mAuth = FirebaseAuth.getInstance();
         onlineUserId = mAuth.getCurrentUser().getUid();
@@ -177,7 +176,7 @@ public class TodaySpendingActivity extends AppCompatActivity {
                     return;
                 }
                 else {
-                    loader.setMessage("adding a budget item");
+                    loader.setMessage("Adding a budget item");
                     loader.setCanceledOnTouchOutside(false);
                     loader.show();
 

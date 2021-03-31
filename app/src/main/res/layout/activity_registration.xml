@@ -8,55 +8,55 @@
     android:background="@drawable/gradient"
     tools:context=".RegistrationActivity">
 
-        <ImageView
-            android:layout_width="120dp"
-            android:layout_height="150dp"
-            android:src="@drawable/applogo"
-            android:layout_alignParentTop="true"
-            android:layout_centerHorizontal="true"
-            android:layout_marginTop="40dp"/>
+    <ImageView
+        android:layout_width="120dp"
+        android:layout_height="150dp"
+        android:layout_alignParentTop="true"
+        android:layout_centerHorizontal="true"
+        android:layout_marginTop="150dp"
+        android:src="@drawable/applogo" />
 
     <EditText
         android:id="@+id/email"
-        android:layout_width="250dp"
+        android:layout_width="300dp"
         android:layout_height="40dp"
-        android:background="#11000000"
+        android:layout_above="@+id/password"
+        android:layout_centerHorizontal="true"
+        android:layout_marginBottom="15dp"
+        android:background="#FFFFFF"
         android:drawableLeft="@drawable/ic_action_user"
         android:ems="10"
         android:hint="Email"
         android:inputType="textEmailAddress"
-        android:textSize="16dp"
-        android:layout_marginBottom="15dp"
-        android:layout_above="@+id/password"
-        android:layout_centerHorizontal="true" />
+        android:textSize="16dp" />
 
     <EditText
         android:id="@+id/password"
-        android:layout_width="250dp"
+        android:layout_width="300dp"
         android:layout_height="40dp"
-        android:background="#11000000"
+        android:layout_above="@+id/rePassword"
+        android:layout_alignStart="@+id/email"
+        android:layout_alignLeft="@+id/email"
+        android:layout_marginBottom="15dp"
+        android:background="#FDFFFFFF"
         android:drawableLeft="@drawable/ic_action_pass"
         android:ems="10"
         android:hint="Password"
-        android:inputType="textPassword"
-        android:layout_marginBottom="15dp"
-        android:layout_above="@+id/rePassword"
-        android:layout_alignLeft="@+id/email"
-        android:layout_alignStart="@+id/email" />
-        <EditText
-            android:id="@+id/rePassword"
-            android:layout_width="250dp"
-            android:layout_height="40dp"
-            android:background="#11000000"
-            android:drawableLeft="@drawable/ic_action_pass"
-            android:ems="10"
-            android:hint="Re-enter password"
-            android:inputType="textPassword"
-            android:layout_marginBottom="115dp"
-            android:layout_alignBottom="@+id/cardView"
-            android:layout_alignLeft="@+id/password"
-            android:layout_alignStart="@+id/password"
-            />
+        android:inputType="textPassword" />
+
+    <EditText
+        android:id="@+id/rePassword"
+        android:layout_width="300dp"
+        android:layout_height="40dp"
+        android:layout_alignStart="@+id/password"
+        android:layout_alignLeft="@+id/password"
+        android:layout_alignBottom="@+id/cardView"
+        android:layout_marginBottom="130dp"
+        android:background="#FFFFFF"
+        android:drawableLeft="@drawable/ic_action_pass"
+        android:ems="10"
+        android:hint="Re-enter password"
+        android:inputType="textPassword" />
     <androidx.cardview.widget.CardView
         android:id="@+id/cardView"
         android:layout_width="300dp"
@@ -91,26 +91,8 @@
         android:layout_centerHorizontal="true"
         android:layout_marginBottom="56dp"
         android:onClick="signIn"
-        android:text="Already had an account? Sign in" />
+        android:text="Already had an account? Sign in"
+        android:textColor="#00BCD4"
+        android:textSize="16sp" />
 
 </RelativeLayout>
-
-
-<!--    <Button-->
-<!--        android:id="@+id/registerBtn"-->
-<!--        android:layout_width="match_parent"-->
-<!--        android:layout_height="wrap_content"-->
-<!--        android:layout_marginLeft="20dp"-->
-<!--        android:layout_marginRight="20dp"-->
-<!--        android:layout_marginBottom="5dp"-->
-<!--        android:backgroundTint="#b1d1ed "-->
-<!--        android:text="SIGN UP"-->
-<!--        android:textAllCaps="false" />-->
-
-<!--    <TextView-->
-<!--        android:id="@+id/registerQn"-->
-<!--        android:layout_width="match_parent"-->
-<!--        android:layout_height="wrap_content"-->
-<!--        android:gravity="center"-->
-<!--        android:onClick="signIn"-->
-<!--        android:text="Already had an account? Sign in" />-->

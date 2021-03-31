@@ -25,11 +25,13 @@
         android:id="@+id/appName"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
+        android:fontFamily="monospace"
         android:text="SMART FINANCE"
         android:textAlignment="center"
         android:textAllCaps="true"
-        android:textColor="#1E2123"
+        android:textColor="#CBFFFFFF"
         android:textSize="30sp"
-        android:textStyle="bold" />
+        android:textStyle="bold"
+        android:typeface="normal" />
 
 </LinearLayout>

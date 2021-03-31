@@ -124,7 +124,7 @@ public class TodayItemsAdapter extends RecyclerView.Adapter<TodayItemsAdapter.Vi
         mNotes.setText(note);
         mNotes.setSelection(note.length());
 
-        Button delBut = mView.findViewById(R.id.btnDelete);
+        Button btnDelete = mView.findViewById(R.id.btnDelete);
         Button btnUpdate = mView.findViewById(R.id.btnUpdate);
 
         btnUpdate.setOnClickListener(new View.OnClickListener() {
@@ -159,7 +159,7 @@ public class TodayItemsAdapter extends RecyclerView.Adapter<TodayItemsAdapter.Vi
                 dialog.dismiss();
             }
         });
-        delBut.setOnClickListener(new View.OnClickListener() {
+        btnDelete.setOnClickListener(new View.OnClickListener() {
             @Override
             public void onClick(View v) {
                 DatabaseReference reference = FirebaseDatabase.getInstance().getReference("expenses")

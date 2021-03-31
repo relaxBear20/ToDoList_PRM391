@@ -6,81 +6,47 @@
     android:layout_margin="10dp"
     android:background="#fff"
     android:orientation="vertical">
-
     <TextView
+        android:id="@+id/beginningBalance"
         android:layout_width="match_parent"
         android:layout_height="wrap_content"
-        android:layout_marginTop="5dp"
         android:background="#32364C"
         android:gravity="center"
         android:padding="5dp"
-        android:text="Update this item?"
+        android:text="Beginning Balance: XXX"
         android:textColor="#fff"
         android:textSize="20sp" />
 
     <TextView
-        android:id="@+id/itemName"
+        android:id="@+id/currentBalance"
         android:layout_width="match_parent"
         android:layout_height="wrap_content"
         android:background="#b1d1ed"
         android:gravity="center"
         android:padding="10dp"
-        android:text="itemName"
+        android:text="Current Balance: XXX"
         android:textColor="#000"
         android:textSize="20sp"
         android:textStyle="bold" />
 
     <EditText
-        android:id="@+id/amount"
+        android:id="@+id/beginningAmount"
         android:layout_width="match_parent"
         android:layout_height="wrap_content"
         android:layout_marginLeft="20dp"
         android:layout_marginTop="10dp"
         android:layout_marginRight="20dp"
-        android:hint="Enter amount..."
+        android:hint="Edit beginning balance..."
         android:inputType="numberDecimal"
         android:textColor="#000"
         android:textColorHint="#000" />
 
-    <EditText
-        android:id="@+id/note"
-        android:layout_width="match_parent"
-        android:layout_height="wrap_content"
-        android:layout_marginLeft="20dp"
-        android:layout_marginRight="20dp"
-        android:layout_marginBottom="10dp"
-        android:hint="Enter more..."
-        android:inputType="textCapSentences"
-        android:textColor="#000"
-        android:textColorHint="#000" />
 
     <LinearLayout
         android:layout_width="match_parent"
         android:layout_height="wrap_content"
         android:layout_margin="10dp"
         android:orientation="horizontal">
-
-        <RelativeLayout
-            android:layout_width="0dp"
-            android:layout_height="wrap_content"
-            android:layout_weight="1">
-
-            <Button
-                android:id="@+id/btnDelete"
-                android:layout_width="match_parent"
-                android:layout_height="wrap_content"
-                android:layout_marginStart="2dp"
-                android:layout_marginTop="2dp"
-                android:layout_marginEnd="2dp"
-                android:layout_marginBottom="2dp"
-                android:backgroundTint="#302153"
-                android:text="Delete"
-                android:textAllCaps="false"
-                android:textColor="#fff"
-                android:textStyle="bold"
-                app:cornerRadius="25dp" />
-        </RelativeLayout>
-
         <RelativeLayout
             android:layout_width="0dp"
             android:layout_height="wrap_content"
@@ -101,6 +67,25 @@
                 android:textStyle="bold"
                 app:cornerRadius="25dp" />
         </RelativeLayout>
-    </LinearLayout>
+        <RelativeLayout
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:layout_weight="1">
 
+            <Button
+                android:id="@+id/btnCancel"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginStart="2dp"
+                android:layout_marginTop="2dp"
+                android:layout_marginEnd="2dp"
+                android:layout_marginBottom="2dp"
+                android:backgroundTint="#302153"
+                android:text="Cancel"
+                android:textAllCaps="false"
+                android:textColor="#fff"
+                android:textStyle="bold"
+                app:cornerRadius="25dp" />
+        </RelativeLayout>
+    </LinearLayout>
 </LinearLayout>
